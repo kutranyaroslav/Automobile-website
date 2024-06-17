@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class MainController{
+class MainController extends AbstractController {
     #[Route('/')]
     public function homepage(): Response
     {
-        return new Response('<Strong>Avto24</Strong>: You in the right place to buy your car ');
+        $options = 450;
+        return $this->render('main/homepage.html.twig', ['options'=>$options, ]);
     }
 }
