@@ -2,6 +2,23 @@
 {%block body %}
 <h1> BMW:</h1>
 <div>
-    <p>{{ options }}</p>
+    {{ models_count }}
+    <h2>Random Choice:</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>{{ random_choice.id }}</td>
+            <td>{{ random_choice.name }}</td>
+            <td>{{ random_choice.brand }}</td>
+            <td>{{ random_choice.model }}</td>
+            <td>{{ random_choice.status }}</td>
+        </tr>
+    </table>
 </div>
 {% endblock %}
