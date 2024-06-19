@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ model.name }}
+{%endblock %}
+{% block body %}
+<h1>{{ model.name }}</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>{{ model.name }}</td>
+        <td>{{ model.brand }}</td>
+        <td>{{ model.model }}</td>
+        <td>{{ model.status }}</td>
+    </tr>
+</table>
+{% endblock %}
