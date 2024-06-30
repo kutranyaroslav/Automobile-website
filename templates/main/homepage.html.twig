@@ -1,23 +1,5 @@
 {%extends 'base.html.twig' %}
 {%block body %}
-    <div>
 
-    <h2>Random Choice:</h2>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th><a href = "{{ path('app_models_show', {id : random_choice.id}) }}">Name</a></th>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>{{ random_choice.id }}</td>
-            <td>{{ random_choice.name }}</td>
-            <td>{{ random_choice.brand }}</td>
-            <td>{{ random_choice.model }}</td>
-            <td>{{ random_choice.status }}</td>
-        </tr>
-    </table>
-</div>
+
 {% endblock %}

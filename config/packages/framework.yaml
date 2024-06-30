@@ -5,9 +5,12 @@ framework:
 
     # Note that the session will be started ONLY if you read or write from it.
     session: true
-
+    mailer:
+        dsn: '%env(MAILER_DSN)%'
     #esi: true
     #fragments: true
+# config/packages/framework.yaml
+
 
 when@test:
     framework:

@@ -1,0 +1,27 @@
+.navbar-nav .nav-link, .navbar-brand, .form-control, .btn {
+    font-size: 1.4rem; /* Increase font size */
+    padding: 0.75rem 1rem; /* Adjust padding for larger clickable area */
+    margin-right: 1rem;
+}
+
+.navbar-brand img {
+    width: 200px; /* Adjust width */
+    height: auto; /* Keep aspect ratio */
+}
+body {
+    background-image: url('/images/logo-black.png');
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10%; /* Ensure footer takes up full viewport height */
+}
+.link-no-design {
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: none; /* Remove underline */
+}
+.link-no-design:hover {
+    color: inherit; /* Prevent color change on hover */
+}
