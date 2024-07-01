@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController {
-    #[Route('/')]
+    #[Route('/', name: "homepage")]
     public function homepage(): Response
     {
 
