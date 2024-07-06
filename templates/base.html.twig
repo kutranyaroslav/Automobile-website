@@ -32,7 +32,7 @@
                         <a class="nav-link active" aria-current="page" href={{ path('homepage') }}>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="/services">Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-disabled="false">Support </a>
+                        <a class="nav-link" aria-disabled="false" href = "/support">Support </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="false" href = "/login/">Login</a>
@@ -76,7 +76,7 @@
     {% endblock %}
     </body>
     <footer class = "bg-dark py-5 mt-5">
-        <div class = "container text-light text-center">
+        <div class = "container text-light text-center footer-content">
             <img  src = "{{ asset('images/logo-no-background.png') }}" width = 10% height = 10% />
             <small class = "text-white-50">&copy;Copyright by Avto24. All rights reserved</small>
         </div>

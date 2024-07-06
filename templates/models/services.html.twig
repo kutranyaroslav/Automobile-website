@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Our Services{% endblock %}
+{% block stylesheets%}
+    <link href = "{{ asset('styles/services.css') }}" rel = "stylesheet">
+{% endblock %}
+{% block body %}
+    <div class="services-container">
+        <h1>Our Services</h1>
+        <div class="service-card">
+            <h2>Car Diagnostic</h2>
+            <p>Ensure your vehicle is running at its best with our comprehensive diagnostic services.Click
+                <a href = '#'>Here</a></p>
+        </div>
+        <div class="service-card">
+            <h2>Car Trade-In</h2>
+            <p>Looking to trade in your car? Get the best value and a smooth process with our trade-in services.
+               Click <a href = '#'>Here</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

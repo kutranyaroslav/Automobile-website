@@ -1,0 +1,24 @@
+{# templates/emails/support.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Support Request Received</title>
+</head>
+<body>
+<h1>Support Request Received</h1>
+<p>Dear {{ data.firstname }},</p>
+<p>Thank you for reaching out to us. We have received your support request and will get back to you shortly.</p>
+<p>Here are the details we received:</p>
+<ul>
+    <li>First Name: {{ data.firstname }}</li>
+    <li>Last Name: {{ data.lastname }}</li>
+    <li>Email: {{ data.email }}</li>
+    <li>Phone: {{ data.phone }}</li>
+    <li>Message: {{ data.message }}</li>
+</ul>
+<p>Best regards,</p>
+<p>Avto24</p>
+</body>
+</html>
