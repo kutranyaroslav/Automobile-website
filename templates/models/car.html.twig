@@ -1,0 +1,52 @@
+{%extends 'base.html.twig' %}
+{% block title %}
+    {{ car.mark }} {{ car.model }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link href = "{{ asset('styles/car.css') }}" rel = "stylesheet">
+{% endblock %}
+{% block body %}
+<div class="container car-detail-container pack">
+    <div class="car-detail-header">
+        <h1>{{ car.mark }} {{ car.model }}</h1>
+        <h4>{{ car.year }}</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset(car.imageUrl) }}" class="car-detail-image" alt="{{ car.mark }} {{ car.model }}">
+        </div>
+        <div class="col-md-6">
+            <div class="car-detail-body">
+                <p><strong>Description:</strong> {{ car.description }}</p>
+                <table class="table car-detail-specs">
+                    <tr>
+                        <th>Brand</th>
+                        <td>{{ car.mark }}</td>
+                    </tr>
+                    <tr>
+                        <th>Model</th>
+                        <td>{{ car.model }}</td>
+                    </tr>
+                    <tr>
+                        <th>Year</th>
+                        <td>{{ car.year }}</td>
+                    </tr>
+                    <tr>
+                        <th>Mileage</th>
+                        <td>{{ car.mileage }}</td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td>{{ car.color }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="car-detail-footer">
+        <a href="{{ path('commonrequest',{'type':'I want to buy '~ car.mark ~' '~ car.model}) }}" class="btn btn-primary">Contact Dealer</a>
+        <a href="{{ path('car_render', {'mark':car.mark}) }}" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+{% endblock %}

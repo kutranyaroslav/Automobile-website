@@ -42,7 +42,7 @@
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        {{ form_widget(supportForm.message, {'attr': {'value': message ? message : ''}}) }}
+                                        {{ form_widget(supportForm.message, {'value': message|default('')}) }}
                                         <label class="form-label" for="supportForm_message">Message</label>
                                     </div>
 

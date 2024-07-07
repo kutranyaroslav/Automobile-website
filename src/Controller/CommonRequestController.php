@@ -30,6 +30,7 @@ class CommonRequestController extends AbstractController
             $this->entityManager->persist($CommonRequest);
             $this->entityManager->flush();
 
+            return $this->redirectToRoute('success', ['firstname' => $CommonRequest->getFirstname()]);
             // Add flash message or redirect as needed
         }
 

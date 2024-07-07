@@ -39,10 +39,8 @@
                             Cars
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">BMW</a></li>
-                            <li><a class="dropdown-item" href="#">Mercedes-benz</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
+                            <li><a class="dropdown-item" href="{{ path('car_render', {'mark':'BMW'}) }}">BMW</a></li>
+                            <li><a class="dropdown-item" href="{{ path('car_render', {'mark':'Mercedes'}) }}">Mercedes-benz</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
