@@ -26,7 +26,7 @@ class SupportType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => SupportRequest::class,
+            'data_class' =>SupportRequest::class,
         ]);
     }
 }
